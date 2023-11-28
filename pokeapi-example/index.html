@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeAPI Example</title>
+    <title>PokeAPI Ejemplo</title>
+    <link rel="shortcut icon" href="poke.png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+   <center> 
     <h1>PokeAPI Example</h1>
+    </center> 
+<img src="togepi.gif" id="i1">
+<img src="togepi.gif" id="i2">
+    <br>
+    <hr>
+    <p>En esta pagina, veremos la altura, peso y sprite de los pokemon que usted desea ingresar, todo esto gracias al uso de PokeAPI. Con esta misma usaremos el tiempo y los recursos para conocer a nuestro pokemon favorito, disfruten!!!</p> 
+    <br>
+    <form id="pokemonForm">
+        <label for="pokemonName">Ingresa el nombre del Pokemon:</label>
+        <input type="text" id="pokemonName" name="pokemonName" required>
+        <button type="submit">Buscar</button>
+    <br>
+    <br>
+    <hr>
+    <img src="po.webp" class="po">
+    <br>
+    <hr>
+    </form>
     <div id="pokemonData">
-        <h2 id="pokemonName"></h2>
+        <h2 id="pokemonNameResult"></h2>
         <p id="pokemonHeight"></p>
         <p id="pokemonWeight"></p>
         <img id="pokemonImage" alt="Pokemon Image">
     </div>
 
     <script src="index.js"></script>
+
 </body>
+<br>
+<br>
+<footer>
+    <h2>Pagina hecha por: ✨Erick Garcia Ramirez/StarlessKing✨</h2>
+    <br>
+    <p style="font-size: 13px;">Todos los derechos de imagenes y datos usados en esta pagina van para PokemonCompany y PokeAPI.</p>
+    <p style="font-size: 13px;">Nota del editor: La pagina es muy basica para mi gusto, sin embargo puede ser mejorado por mucho mas, cualquier cosa y duda que se tenga, no duden en contactarme.</p>
+</footer>
 </html>

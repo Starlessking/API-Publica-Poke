@@ -1,18 +1,17 @@
-
 const getPokemonData = async (pokemonName) => {
     try {
 
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
         const pokemonData = await response.json();
 
-        const pokemonNameElement = document.getElementById('pokemonName');
+        const pokemonNameResultElement = document.getElementById('pokemonNameResult');
         const pokemonHeightElement = document.getElementById('pokemonHeight');
         const pokemonWeightElement = document.getElementById('pokemonWeight');
         const pokemonImageElement = document.getElementById('pokemonImage');
 
-        pokemonNameElement.textContent = `Name: ${pokemonData.name}`;
-        pokemonHeightElement.textContent = `Height: ${pokemonData.height}`;
-        pokemonWeightElement.textContent = `Weight: ${pokemonData.weight}`;
+        pokemonNameResultElement.textContent = `Nombre: ${pokemonData.name}`;
+        pokemonHeightElement.textContent = `Altura: ${pokemonData.height}`;
+        pokemonWeightElement.textContent = `Peso: ${pokemonData.weight}`;
 
         const imageUrl = pokemonData.sprites.front_default;
         pokemonImageElement.src = imageUrl;
@@ -21,4 +20,10 @@ const getPokemonData = async (pokemonName) => {
     }
 };
 
-getPokemonData('jolteon');
+const pokemonForm = document.getElementById('pokemonForm');
+pokemonForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const pokemonNameInput = document.getElementById('pokemonName');
+    const pokemonName = pokemonNameInput.value.toLowerCase(); 
+    getPokemonData(pokemonName);
+});

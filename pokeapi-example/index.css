@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    color: antiquewhite;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    padding: 20px;
+}
+
+p{
+    padding: 10px;
+    text-align: center;
+}
+
+.po{
+    width: 400px;
+    height: auto;
+    margin-left: 38%
+}
+
+#i1{
+    position: absolute;
+    left:5%;
+    top: 2%;
+    width:80px;
+    height: auto;
+}
+
+#i2{
+    position: absolute;
+    right:5%;
+    top: 2%;
+    width:80px;
+    height: auto;
+}
+
+label{
+    padding: 10px;
+}
+
+#pokemonData{
+    text-align: center;
+}
+
+#pokemonImage{
+    display: block;
+    border-radius: 30px;
+    background-color: black;
+    width: 200px;
+    height: auto;
+    margin-left: 44%
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    bottom: 0%;
+}
