@@ -10,8 +10,8 @@ const getPokemonData = async (pokemonName) => {
         const pokemonImageElement = document.getElementById('pokemonImage');
 
         pokemonNameResultElement.textContent = `Nombre: ${pokemonData.name}`;
-        pokemonHeightElement.textContent = `Altura: ${pokemonData.height}`;
-        pokemonWeightElement.textContent = `Peso: ${pokemonData.weight}`;
+        pokemonHeightElement.textContent = `Altura: ${pokemonData.height}m`;
+        pokemonWeightElement.textContent = `Peso: ${pokemonData.weight}kg`;
 
         const imageUrl = pokemonData.sprites.front_default;
         pokemonImageElement.src = imageUrl;
